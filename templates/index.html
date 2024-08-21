@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Embedded Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="content">
+        <h1>{{ heading }}</h1>
+
+    <div id="vizContainer">
+        <tableau-viz 
+            id="tableauViz" 
+            src='{{ dashboard_url }}' 
+            token="{{ token }}"
+            onVizLoadError="handleLoadError"
+            onTabSwitched="scrollTop"
+        >
+        </tableau-viz>
+    </div>
+    </div>
+
+    <script>
+        function scrollTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'auto'
+            });
+        }
+    </script>
+    <script type='module' src='https://10ay.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    
+</body>
+
+</html>
