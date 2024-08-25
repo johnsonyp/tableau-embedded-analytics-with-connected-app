@@ -73,7 +73,7 @@ This is a quick example of how to make embedded analytics a bit more seamless if
 
 Ultimately, Tableau is still handling a significant amount of work here in that the dashboards and their permissions are still controlled on that end. Users will still need to exist in Tableau in order to properly handle permission and activity tracking accordingly. As such, while a connected app may remove the "double sign-in" issue, you may encounter a "double account setup" issue with the need for users to exist on Tableau and your own application.
 
-This repository currently does not cover the automation and further integration of users between Tableau and your own application. Tableau provides some [documentation](https://help.tableau.com/current/online/en-us/scim_config_online.htm) and varying methods on how to handle this.
+This repository currently does not cover the automation and further integration of users between Tableau and your own application. Tableau provides some [documentation](https://help.tableau.com/current/online/en-us/scim_config_online.htm) and varying methods on how to handle this. There is also the option for [On-demand access (ODA)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm#ondemand-access-embedding-workflows-only) which may be an eaiser route as it is as simple as creating a user group without needing to add users. For this though, you will need to take full advantage of the JWT and its payload, as well as your front-end, to control the expierence for the user.
 
 
 
