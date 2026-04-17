@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+#content {
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+}
+
+#vizContainer {
+    height:auto;
+    width:100%;
+}

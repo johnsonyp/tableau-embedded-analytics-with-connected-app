@@ -1,0 +1,6 @@
+Flask
+gunicorn
+
+PyJWT==2.8.0
+pydantic_settings==2.13.1
+uuid==1.30
